@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRAVEL WEBSITE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <script src="https://kit.fontawesome.com/dfd71f224e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--navbar with background video-->
+  <div class="hero">
+    <!--this video is compresed please extract it-->
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="images/pexels-taryn-elliott-4729790-1920x1080-25fps.mp4" type="video/mp4">
+    </video>
+
+    <nav>
+      <img src="images/401-logo.png" class="logo">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#places">PLACES</a></li>
+        <li><a href="#book">Booking</a></li>
+        <li><a href="#activites">ACTIVITES</a></li>
+        <li><a href="#contactus">CONTACT US</a></li>
+      </ul>
+      <ul>
+        <li><button class="btn1" onclick="document.getElementById('login-form').style.display='block'"
+            style="width:auto;">Log in</button></li>
+        <li><button class="btn2" onclick="document.getElementById('login-form').style.display='block'"
+            style="width:auto;">Sign up</button></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1>Enjoy your travel with us</h1>
+      <a href="#"><button>Explore</button></a>
+    </div>
+
+
+    <!--login page-->
+    <div id='login-form' class='login-page'>
+      <div class="form-box">
+        <div class='button-box'>
+          <div id='btn'></div>
+          <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+          <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+        </div>
+        <form id='login' class='input-group-login'>
+          <input type='text' class='input-field' placeholder='Email Id' required>
+          <input type='password' class='input-field' placeholder='Enter Password' required>
+          <input type='checkbox' class='check-box'><span>Remember Password</span>
+          <button type='submit' class='submit-btn'>Log in</button>
+        </form>
+        <form id='register' class='input-group-register'>
+          <input type='text' class='input-field' placeholder='First Name' required>
+          <input type='text' class='input-field' placeholder='Last Name ' required>
+          <input type='email' class='input-field' placeholder='Email Id' required>
+          <input type='password' class='input-field' placeholder='Enter Password' required>
+          <input type='password' class='input-field' placeholder='Confirm Password' required>
+          <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+          <button type='submit' class='submit-btn'>Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <main>
+
+    <!--- TOUR SEARCH-->
+    <section class="tour-search">
+      <div class="container2" id="home">
+
+        <form action="" class="tour-search-form">
+
+          <div class="input-wrapper">
+            <label for="destination" class="input-label">Search Destination*</label>
+
+            <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
+              class="input-field2">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="people" class="input-label">hotel*</label>
+
+            <input type="text" name="people" id="people" required placeholder="need or not?" class="input-field2">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="checkin" class="input-label">Checkin Date**</label>
+
+            <input type="date" name="checkin" id="checkin" required class="input-field2">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="checkout" class="input-label">Checkout Date*</label>
+
+            <input type="date" name="checkout" id="checkout" required class="input-field2">
+          </div>
+
+          <button type="submit" class="btn btn-secondary">Inquire now</button>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!--home part-->
+    <section class="homy">
+      <div class="vid">
+        <video autoplay loop muted plays-inline>
+          <source src="images/female-tourist-with-luggage-8060346-6460037.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="conn">
+        <h3>Adventure is worthwhile</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quis perferendis nulla qui tenetur earum! Dicta numquam non corrupti eius harum obcaecati fugit nobis
+          voluptatem deleniti,
+          veniam dolorum, quos nam cupiditate.</p>
+        <a class="bttn" href="https://youtu.be/4YwDGz3fEpE">Start</a>
+      </div>
+
+    </section>
+    <hr>
+
+    <!--places -->
+    <div class="container">
+      <h1 class="sub-title" id="places">Places</h1>
+
+      <div class="cta">
+        <h2>Egypt</h2>
+        <p>It's an amazing experience to visit Egypt.<br>Come to vsit egypt,habiby.</p>
+        <a href="https://youtu.be/BapSQFJPMM0" class="cta-btn">Know More</a>
+      </div>
+      <div class="text-up-img">
+        <h3>trending places</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+          Tempora nobis qui ipsam quas nam neque ipsa inventore assumenda,<br>
+          earum sint cum ullam dolores? At nisi itaque, quam repellat iusto neque!</p>
+      </div>
+      <div class="exclusive">
+        <div class="box">
+          <img src="images/p1.jpg">
+          <span>
+            <h3>London</h3>
+            <p>Starts $250</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p2.jpg">
+          <span>
+            <h3>London</h3>
+            <p>Starts @ $250</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p3.jpg">
+          <span>
+            <h3>London</h3>
+            <p>Starts @ $250</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p4.jpg">
+          <span>
+            <h3>Turkia</h3>
+            <p>Starts @ $700</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p5.jpg">
+          <span>
+            <h3>London</h3>
+            <p>Starts @ $900</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p6.jpg">
+          <span>
+            <h3>Amirca</h3>
+            <p>Starts @ $800</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p7.jpg">
+          <span>
+            <h3>London</h3>
+            <p>Starts @ $250</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p8.jpg">
+          <span>
+            <h3>Asia</h3>
+            <p>Starts @ $250</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p9.jpg">
+          <span>
+            <h3>Paris</h3>
+            <p>Starts @ $500</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+        <div class="box">
+          <img src="images/p10.jpg">
+          <span>
+            <h3>Egypt</h3>
+            <p>Starts @ $400</p>
+            <a href="#">Read More</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!--activty section -->
+    <section class="category" id="activites">
+      <h1 class="heading">Activties ideas</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem totam aut sapiente eius quasi praesentium
+        repudiandae,
+        maxime, consectetur odit perferendis ducimus alias tempore ex?
+        Soluta, iste illum! Vero, molestias eaque!</p>
+      <div class="box-con">
+        <div class="b-ox">
+          <img src="images/r2.jpg">
+          <h3>Montaining</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, aliquid?</p>
+          <a href="#" class="bt-n">read more</a>
+        </div>
+
+        <div class="b-ox">
+          <img src="images/r3.jpg">
+          <h3>Sea</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, aliquid?</p>
+          <a href="#" class="bt-n">read more</a>
+        </div>
+
+        <div class="b-ox">
+          <img src="images/r4.jpg">
+          <h3>bool</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, aliquid?</p>
+          <a href="#" class="bt-n">read more</a>
+        </div>
+      </div>
+
+      <div class="box-con">
+        <div class="b-ox">
+          <img src="images/r5.jpg">
+          <h3>Diving</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, aliquid?</p>
+          <a href="#" class="bt-n">read more</a>
+        </div>
+
+        <div class="b-ox">
+          <img src="images/r6.jpg">
+          <h3>Biking</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, aliquid?</p>
+          <a href="#" class="bt-n">read more</a>
+        </div>
+
+        <div class="b-ox">
+          <img src="images/r7.jpg">
+          <h3>bungee jump</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, aliquid?</p>
+          <a href="#" class="bt-n">read more</a>
+        </div>
+      </div>
+
+    </section>
+    <hr>
+
+    <!--booking section-->
+    <section class="book" id="book">
+      <h1>Book Now</h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/ph1.jpg">
+        </div>
+        <form action="">
+          <div class="inputbox">
+            <h3>where to</h3>
+            <input type="text" placeholder="place name">
+          </div>
+          <div class="inputbox">
+            <h3>how many</h3>
+            <input type="number" placeholder="numper of guests">
+          </div>
+          <div class="inputbox">
+            <h3>arrivals</h3>
+            <input type="date">
+          </div>
+          <div class="inputbox">
+            <h3>leaving</h3>
+            <input type="date">
+          </div>
+          <input type="submit" class="bt" value="book now">
+
+        </form>
+      </div>
+
+      </div>
+    </section>
+
+    
+    <!--contact us section-->
+    <div class="footer" id="contactus">
+      <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+      <hr>
+      <p> Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved | Ajeet
+      </p>
+    </div>
+
+  </main>
+
+
+  <script src="scripts/script.js"></script>
+
+
+</body>
+
+</html>
